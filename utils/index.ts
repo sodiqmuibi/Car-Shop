@@ -15,7 +15,7 @@ export async function fetchCars (filters: FilterProps) {
 
 export const calculatePrice = (city_mpg: number, year: number) => {
     const basePrice = 50
-    const mileage = 0.1
+    const mileage = 0.2
     const age = 0.05
     const mileageRate = city_mpg * mileage
     const ageRate = (new Date().getFullYear() - year) * age
