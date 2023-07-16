@@ -45,5 +45,6 @@ export interface FilterProps {
 
 export interface CustomFilterProps {
     title: string,
-    options: {title: string, value: string}[]
+    options: {title: string, value: string}[],
+    setFuelorYear: ((fuelorYear: any) => void)
 }
